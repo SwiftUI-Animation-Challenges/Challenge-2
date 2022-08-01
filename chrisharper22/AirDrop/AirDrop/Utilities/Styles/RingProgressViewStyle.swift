@@ -24,8 +24,8 @@ public struct RingProgressViewStyle: ProgressViewStyle {
 				Circle()
 					.trim(from: 0, to: configuration.fractionCompleted ?? 0)
 					.stroke(Color.accentColor, lineWidth: lineWidth!)
-					.rotationEffect(.degrees(-90))
 			}
+			.rotationEffect(.degrees(-90))
 		}
 		if strokeStyle != nil {
 			ZStack {
@@ -35,8 +35,9 @@ public struct RingProgressViewStyle: ProgressViewStyle {
 				Circle()
 					.trim(from: 0, to: configuration.fractionCompleted ?? 0)
 					.stroke(Color.accentColor, style: strokeStyle!)
-					.rotationEffect(.degrees(-90))
+					
 			}
+			.rotationEffect(.degrees(-90))
 		}
 	}
 	
