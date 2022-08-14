@@ -93,5 +93,6 @@ extension AirDropAnimationView {
 struct AirDropAnimationView_Previews: PreviewProvider {
     static var previews: some View {
         AirDropAnimationView(recipientName: "iPhone")
+            .previewLayout(.fixed(width: 320, height: 350))
     }
 }
